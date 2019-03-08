@@ -1,6 +1,6 @@
 <style lang="scss" src="./css/_login.scss" scoped></style>
 <template>
-<div class="register" @click="test">
+<div class="register">
     <!-- header start -->
     <header class="bar bar-header bar-light">
       <div class="bar-left">
@@ -20,8 +20,6 @@
         </bl-tab-item>
       </bl-navbar>
     </div>
-    <!-- header end -->
-    <login-safe style="position: fixed;top:0;left:0;width:100%;height:100%;" v-if="showSafe" :promobile="phone" @hideSafe="toHide"></login-safe>
     <!-- content start -->
     <bl-tab-container :swipeable="false" v-model="tabsModel">
       <bl-tab-container-item :id="0">
